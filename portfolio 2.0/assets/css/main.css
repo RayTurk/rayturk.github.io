@@ -1,0 +1,427 @@
+:root {
+  --primary-color: #ff4242;
+  --primary-dark: #252734;
+  --primary-light: #c4cbca;
+  --secondary-color: #9381ff;
+  --secondary-dark: #333646;
+  --alt-dark: #424657;
+  --animate-speed: 2s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/*
+font-family: 'Chivo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7em;
+  scroll-behavior: smooth;
+}
+
+header {
+  min-height: 60vh;
+  min-height: 60vh;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Chivo', sans-serif;
+  padding-bottom: 20px;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+
+.container {
+  margin: auto;
+  max-width: 1600px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.large-text-primary {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.light {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--primary-light);
+}
+
+.icons {
+  font-size: 22px;
+}
+
+.icons > a > i {
+  padding: 0 5px;
+  color: var(--primary-light);
+}
+
+.icons > a > i:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--primary-light);
+  background: var(--secondary-dark);
+  padding: 13px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 18px;
+  color: var(--primary-color);
+  padding: 13px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  color: var(--primary-color);
+  font-size: 20px;
+  background: none;
+  text-decoration: none;
+}
+
+.btn-light {
+  color: #333;
+  background: var(--primary-light);
+}
+
+.btn:hover {
+  background: var(--primary-light);
+  color: #333;
+}
+
+.btn-about {
+  color: var(--primary-color);
+  text-decoration: underline;
+  background: none;
+}
+
+.btn-about:hover {
+  color: var(--primary-color);
+  font-size: 20px;
+  background: none;
+  text-decoration: none;
+}
+.bg-dark {
+  background: var(--primary-dark);
+  color: var(--primary-light);
+}
+
+.bg-light {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--primary-dark);
+}
+
+.bg-secondary-dark {
+  background: var(--secondary-dark);
+  color: var(--primary-light);
+}
+
+.bg-alt-dark {
+  background: var(--alt-dark);
+  color: var(--primary-light);
+}
+
+.clr {
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.grid {
+  /* padding-inline-start: 0; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Padding */
+.py-1 {
+  padding: 10px 0;
+}
+.px-1 {
+  padding: 0 10px;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+.px-2 {
+  padding: 0 20px;
+}
+.py-3 {
+  padding: 30px 0;
+}
+.px-3 {
+  padding: 0 30px;
+}
+.p-1 {
+  padding: 10px 10px;
+}
+.p-2 {
+  padding: 20px 20px;
+}
+.p-3 {
+  padding: 30px 30px;
+}
+
+/* Navbar */
+#navbar {
+  background: var(--secondary-dark);
+  color: white;
+  overflow: auto;
+  transform: translateY(-1200px);
+  animation: navbar 1.5s forwards ease-in-out;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  color: var(--secondary-color);
+}
+
+/* About */
+
+#main-header {
+  font-size: 2.8rem;
+}
+
+#about {
+  min-height: 60vh;
+  max-height: 60vh;
+}
+
+#experience > p {
+  display: inline-block;
+  width: 47%;
+}
+
+/* Skills */
+#skills {
+  margin-top: 20px;
+  padding: 2px 16px;
+}
+
+.box {
+  float: left;
+  width: 30%;
+  margin: 0 14px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  min-height: 330px;
+  max-height: 330px;
+  vertical-align: middle;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #484a52;
+}
+
+/* Work */
+#work {
+  margin-top: 200px;
+  min-height: 60vh;
+}
+
+/* pokedex img */
+#work .poke-img {
+  float: left;
+  width: 100%;
+  background: url('../../images/pokedex.png') no-repeat center center;
+  min-height: 100%;
+}
+/* cibo img */
+#work .cibo-img {
+  float: left;
+  width: 100%;
+  background: url('../../images/cibo.png') no-repeat;
+  min-height: 100%;
+}
+/* frontier img */
+#work .frontier-img {
+  float: left;
+  width: 100%;
+  background: url('../../images/frontier.png') no-repeat;
+  min-height: 100%;
+}
+/* codehaus img */
+#work .codehaus-img {
+  float: left;
+  width: 100%;
+  background: url('../../images/codehaus.png') no-repeat;
+  min-height: 100%;
+}
+
+.work-item {
+  min-height: 450px;
+  margin: 50px;
+}
+
+h1 .btn-primary {
+  font-size: 2rem;
+}
+
+h1 .btn-primary:hover {
+  font-size: 2.5rem;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: #ff4242;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+/* Animation */
+#myself {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in-out 2s;
+}
+
+#introduction {
+  transform: translateX(-1800px);
+  animation: left var(--animate-speed) forwards ease-in-out 1.8s;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes navbar {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes left {
+  to {
+    transform: translateX(0);
+  }
+}

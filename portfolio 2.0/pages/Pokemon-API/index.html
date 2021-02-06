@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokedex API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span><img src="images/pokeball.png" alt="" /></span> Ray's Pokedex <span><img src="images/pokeball.png" alt="" />
+      </h1>
+      <div id="generations">
+        <button onclick='fetchGen1()'>Gen. 1</button>
+        <button onclick='fetchGen2()'>Gen. 2</button>
+        <button onclick='fetchGen3()'>Gen. 3</button>
+        <button onclick='fetchGen4()'>Gen. 4</button>
+        <button onclick='fetchGen5()'>Gen. 5</button>
+        <button onclick='fetchGen6()'>Gen. 6</button>
+        <button onclick='fetchGen7()'>Gen. 7</button>
+        <button onclick='fetchGen8()'>Gen. 8</button>
+      </div>
+      <ol id="pokedex"></ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

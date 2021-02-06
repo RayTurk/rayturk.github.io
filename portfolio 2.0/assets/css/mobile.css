@@ -1,0 +1,72 @@
+/* Navbar */
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: 1px dotted #444;
+}
+
+/* Work */
+#work {
+  margin-top: 800px;
+  min-height: 60vh;
+}
+
+#work .grid {
+  grid: none;
+}
+
+#work .work-item {
+  min-height: 10px;
+}
+
+/* pokedex img */
+#work .poke-img {
+  display: none;
+}
+/* cibo img */
+#work .cibo-img {
+  display: none;
+}
+/* frontier img */
+#work .frontier-img {
+  display: none;
+}
+/* codehaus img */
+#work .codehaus-img {
+  display: none;
+}
+
+/* Boxes */
+.box {
+  float: none;
+  width: 100%;
+}
+
+/* About Info */
+#about-info .info-right,
+#about-info .info-left {
+  float: none;
+  width: 100%;
+}
+
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+.l-heading {
+  text-align: center;
+}
+
+/* Contact */
+#contact-info .box {
+  border-bottom: 1px dotted #444;
+}
